@@ -20,6 +20,20 @@ namespace Controllers
         }
 
         public List<Pages> PreviousPages => previousPages;
+        
+        public static PageController Instance { get; private set; }
+        
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
 
         private void Start()
         {
