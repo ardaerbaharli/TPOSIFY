@@ -1,3 +1,4 @@
+using System;
 using Enums;
 using Extensions;
 using Models;
@@ -106,6 +107,11 @@ namespace Controllers
             };
             errorMessageText.text = errorMessage;
             errorMessageText.gameObject.SetActive(true);
+        }
+
+        private void OnDisable()
+        {
+            ClearPage();
         }
 
         private void ClearPage()
