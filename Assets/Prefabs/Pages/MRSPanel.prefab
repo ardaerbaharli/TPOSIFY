@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6203917235332039625}
   - component: {fileID: 1160422625578063318}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MRS Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,7 +119,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6203917235332039625}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6572592946019033650}
+        m_TargetAssemblyTypeName: Controllers.MRSController, Assembly-CSharp
+        m_MethodName: MrsButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4606675762272778614
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,13 +141,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8851512227184323315}
+  - component: {fileID: 6572592946019033650}
   m_Layer: 5
   m_Name: MRSPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8851512227184323315
 RectTransform:
   m_ObjectHideFlags: 0
@@ -159,6 +172,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6572592946019033650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606675762272778614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba2d226a9d2b45a79aef2b89b375950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4723603336912036422
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,12 +197,12 @@ GameObject:
   - component: {fileID: 106273687773710932}
   - component: {fileID: 2757331731884869444}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &654067055859291348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -278,7 +303,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 106273687773710932}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6572592946019033650}
+        m_TargetAssemblyTypeName: Controllers.MRSController, Assembly-CSharp
+        m_MethodName: BackButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6364734703137928544
 GameObject:
   m_ObjectHideFlags: 0

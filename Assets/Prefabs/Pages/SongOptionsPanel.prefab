@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7133848594926122664}
   - component: {fileID: 2290939383999486081}
   - component: {fileID: 4536948516299658019}
-  - component: {fileID: 118127155785598304}
+  - component: {fileID: 1824243616}
   m_Layer: 5
   m_Name: Shuffle Button
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &118127155785598304
+--- !u!114 &1824243616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,41 +85,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 311255976286178853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 384981842a06dca488761aeb34128e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 4536948516299658019}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  isOn: 0
+  image: {fileID: 4536948516299658019}
+  onColor: {r: 0.45882353, g: 0.4392157, b: 0.9490196, a: 1}
+  offColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &398965958705431242
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +182,7 @@ GameObject:
   - component: {fileID: 3751723890777950860}
   - component: {fileID: 576236976505575288}
   - component: {fileID: 1280683469556572298}
-  - component: {fileID: 8539045898274862143}
+  - component: {fileID: 328673930}
   m_Layer: 5
   m_Name: Queue Button
   m_TagString: Untagged
@@ -275,7 +247,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8539045898274862143
+--- !u!114 &328673930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,41 +256,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 691426770232735706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 384981842a06dca488761aeb34128e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1280683469556572298}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  isOn: 0
+  image: {fileID: 1280683469556572298}
+  onColor: {r: 0.45882353, g: 0.4392157, b: 0.9490196, a: 1}
+  offColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &780970430060618918
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3383432308707157645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2141030198654376323}
+        m_TargetAssemblyTypeName: Controllers.SongOptionsController, Assembly-CSharp
+        m_MethodName: AddToPlaylistButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &952127422955700811
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,13 +638,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5345528907084776675}
+  - component: {fileID: 2141030198654376323}
   m_Layer: 5
   m_Name: SongOptionsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5345528907084776675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -723,6 +680,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2141030198654376323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946815917967629205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fbd7670ffd7442f9c41788d7f40e46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2536783510919365929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1006,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6999099223401508350}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2141030198654376323}
+        m_TargetAssemblyTypeName: Controllers.SongOptionsController, Assembly-CSharp
+        m_MethodName: GoToArtistButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3006397335929872555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1030,7 @@ GameObject:
   - component: {fileID: 1816127365291895349}
   - component: {fileID: 302553078303987966}
   - component: {fileID: 5656333798705744167}
-  - component: {fileID: 96493872266439958}
+  - component: {fileID: 86719880}
   m_Layer: 5
   m_Name: Like Button
   m_TagString: Untagged
@@ -1114,7 +1095,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &96493872266439958
+--- !u!114 &86719880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1123,41 +1104,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3006397335929872555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 384981842a06dca488761aeb34128e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 5656333798705744167}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  isOn: 0
+  image: {fileID: 5656333798705744167}
+  onColor: {r: 0.45882353, g: 0.4392157, b: 0.9490196, a: 1}
+  offColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &3817042835554526189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1319,7 @@ GameObject:
   - component: {fileID: 6319551932523337235}
   - component: {fileID: 2907836517543375550}
   - component: {fileID: 5662351375027727900}
-  - component: {fileID: 4643468221869154828}
+  - component: {fileID: 1849239932}
   m_Layer: 5
   m_Name: Loop Button
   m_TagString: Untagged
@@ -1431,7 +1384,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4643468221869154828
+--- !u!114 &1849239932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1440,41 +1393,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4306517102127010284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 384981842a06dca488761aeb34128e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 5662351375027727900}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  isOn: 0
+  image: {fileID: 5662351375027727900}
+  onColor: {r: 0.45882353, g: 0.4392157, b: 0.9490196, a: 1}
+  offColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &5072779178802412605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,6 +1640,7 @@ GameObject:
   - component: {fileID: 4600665322578610268}
   - component: {fileID: 8981473148505151313}
   - component: {fileID: 6431130226788013773}
+  - component: {fileID: 1585363823}
   m_Layer: 5
   m_Name: Add to queue Button
   m_TagString: Untagged
@@ -1823,6 +1749,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1585363823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208661320526539696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384981842a06dca488761aeb34128e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
+  image: {fileID: 8981473148505151313}
+  onColor: {r: 0.45882353, g: 0.4392157, b: 0.9490196, a: 1}
+  offColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &6311266332223195630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,7 +1963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7194663277283329378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2141030198654376323}
+        m_TargetAssemblyTypeName: Controllers.SongOptionsController, Assembly-CSharp
+        m_MethodName: GoToAlbumButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8088899535301668555
 GameObject:
   m_ObjectHideFlags: 0
