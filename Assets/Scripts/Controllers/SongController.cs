@@ -15,6 +15,7 @@ namespace Controllers
 
         public void SongOptionsClicked()
         {
+            PageController.Instance.ShowPage(Pages.SongOption);
         }
 
         public void SongSelectionToggle()
