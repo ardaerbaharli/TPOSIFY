@@ -84,6 +84,11 @@ namespace Controllers
             errorMessageText.gameObject.SetActive(true);
         }
 
+        private void OnDisable()
+        {
+            ClearPage();
+        }
+
         private void ClearPage()
         {
             usernameInput.text = "";
