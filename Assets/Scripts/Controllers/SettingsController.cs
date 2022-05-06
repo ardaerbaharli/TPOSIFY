@@ -21,5 +21,15 @@ namespace Controllers
         {
             PageController.Instance.ShowPage(Pages.SignIn);
         }
+        private void OnEnable()
+        {
+            PageController.Instance.ShowNavbar();
+        }
+
+        private void OnDisable()
+        {
+            PageController.Instance.HideNavbar();
+        }
+
     }
 }
