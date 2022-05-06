@@ -14,7 +14,7 @@ namespace Enums
      Playlist,
      MRS,
      Queue,
-     FindSong,
+     FoundSongs,
      Artist,
      Album,
      AddToPlaylist,
