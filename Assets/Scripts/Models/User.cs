@@ -2,14 +2,28 @@ namespace Models
 {
     public class User
     {
-        private string userName;
+        private string username;
         private string email;
         private string password;
 
+        public User(string username, string password)
+        {
+            Username = username;
+            Password = password;
+        }
+        public User(){}
+
+        public User(string username, string passw, string email)
+        {
+            Username = username;
+            Password = passw;
+            Email = email;
+        }
+
         public string Username
         {
-            get => userName;
-            set => userName = value;
+            get => username;
+            set => username = value;
         }
 
         public string Email

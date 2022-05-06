@@ -17,6 +17,7 @@ namespace Enums
      FindSong,
      Artist,
      Album,
-     AddToPlaylist
+     AddToPlaylist,
+     CreatePlaylist
     }
 }
