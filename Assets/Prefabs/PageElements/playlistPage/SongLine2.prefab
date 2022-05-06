@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2307855488314745211}
-  - component: {fileID: 620594792360676638}
-  - component: {fileID: 3800093614761878016}
-  - component: {fileID: 2403511477760585415}
-  - component: {fileID: 1338008528363710068}
+  - component: {fileID: 1610526528496997362}
+  - component: {fileID: 1387126225241568716}
+  - component: {fileID: 130077368809768165}
+  - component: {fileID: 1339254258401338285}
   m_Layer: 5
-  m_Name: SongLine
+  m_Name: SongLine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,19 +44,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1080, y: 197.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &620594792360676638
-MonoBehaviour:
+--- !u!222 &1610526528496997362
+CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2487108023828758589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a53600427624c5c8c195638a9ebf4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3800093614761878016
+  m_CullTransparentMesh: 1
+--- !u!114 &1387126225241568716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,11 +92,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1338008528363710068}
+  m_TargetGraphic: {fileID: 130077368809768165}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 620594792360676638}
+      - m_Target: {fileID: 1339254258401338285}
         m_TargetAssemblyTypeName: Controllers.SongController, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -112,15 +108,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!222 &2403511477760585415
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2487108023828758589}
-  m_CullTransparentMesh: 1
---- !u!114 &1338008528363710068
+--- !u!114 &130077368809768165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,6 +138,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1339254258401338285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487108023828758589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a53600427624c5c8c195638a9ebf4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2881207750848552213
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 3864378355356454501}
   - component: {fileID: 3864378355356454522}
   - component: {fileID: 3864378355356454523}
-  - component: {fileID: 4897592167066562100}
+  - component: {fileID: 1138143751653166278}
   m_Layer: 5
   m_Name: LikeButton
   m_TagString: Untagged
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4897592167066562100
+--- !u!114 &1138143751653166278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 620594792360676638}
+      - m_Target: {fileID: 1339254258401338285}
         m_TargetAssemblyTypeName: Controllers.SongController, Assembly-CSharp
         m_MethodName: SongOptionsClicked
         m_Mode: 1
