@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Enums;
@@ -11,8 +10,6 @@ namespace Controllers
     {
         private Pages currentPage;
         private List<Pages> previousPages;
-
-
         public GameObject navbar;
         public DictionaryUnity<Pages, GameObject> pages;
 
@@ -51,10 +48,9 @@ namespace Controllers
 
         private void HidePage(Pages page)
         {
-            previousPages.Add(page);
+            PreviousPages.Add(page);
             pages[page].SetActive(false);
         }
-
 
         public void ShowNavbar()
         {
@@ -68,8 +64,13 @@ namespace Controllers
 
         public void GoBack()
         {
-            ShowPage(previousPages.Last());
-            previousPages.RemoveLast();
+            var page = PreviousPages.Last();
+            // ShowPage(page);
+            PreviousPages.RemoveLast();
+
+            pages[currentPage].SetActive(false);
+            currentPage = page;
+            pages[page].SetActive(true);
         }
     }
 }

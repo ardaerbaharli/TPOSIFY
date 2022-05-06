@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 5725896322793155738}
   - component: {fileID: 5725896322793155739}
   - component: {fileID: 6803536116333390905}
+  - component: {fileID: 9105838018578048564}
   m_Layer: 5
   m_Name: LibraryPlaylist
   m_TagString: Untagged
@@ -355,4 +356,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5725896322793155739}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9105838018578048564}
+        m_TargetAssemblyTypeName: Controllers.PlaylistController, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9105838018578048564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5725896322793155737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ed54c90de84375b2072d1d010da8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  likeSongs: 0
