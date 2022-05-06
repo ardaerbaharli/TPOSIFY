@@ -1,24 +1,5 @@
-using UnityEngine.UI;
-
 namespace Models
 {
-    public class PaymentController
-    {
-        public InputField ccNumberInput;
-        public InputField ccMonthInput;
-        public InputField ccYearInput;
-        public InputField ccCVVInput;
-
-        public void PayButton()
-        {
-        }
-
-        public void ValidateInput()
-        {
-        }
-    }
-
-
     public class Payment
     {
         private string ccNumber;
@@ -26,6 +7,13 @@ namespace Models
         private string ccYear;
         private string ccCVV;
 
+        public Payment(string ccNumber, string ccMonth, string ccYear, string ccCVV)
+        {
+            CCNumber = ccNumber;
+            CCMonth = ccMonth;
+            CCYear = ccYear;
+            CCCVV = ccCVV;
+        }
         public string CCNumber
         {
             get { return ccNumber; }
