@@ -1,46 +1,18 @@
-using Models;
+using Enums;
 using UnityEngine;
 
 namespace Controllers
 {
-    public class PlayerController : MonoBehaviour
-    {
-        private Queue queue;
-
-        public Queue Queue
-        {
-            get => queue;
-            set => queue = value;
-        }
-
-
-        public void PlaySong(Song song)
-        {
-        }
-
-        public void StopPlaying()
-        {
-        }
-
-        public void ResumePlaying()
-        {
-        }
-
-        public void NextSong()
-        {
-        }
-
-        public void PreviousSong()
-        {
-        }
-    }
-
     public class SongController : MonoBehaviour
     {
         private PlayerController player;
-        
-        
-        
+
+
+        public void OnClick()
+        {
+            PageController.Instance.ShowPage(Pages.NowPlaying);
+        }
+
         public void SongOptionsClicked()
         {
         }
@@ -59,7 +31,6 @@ namespace Controllers
 
         public void PlaySong()
         {
-            
         }
     }
 }
