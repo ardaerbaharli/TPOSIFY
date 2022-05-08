@@ -72,6 +72,9 @@ namespace Controllers
         private void OnDisable()
         {
             PageController.Instance.HideNavbar();
+            
+            search.text = "";
+            
             resultPages[_currentSearchResultType].SetActive(false);
             DeselectOthers(everything);
             everything.OnSelected();

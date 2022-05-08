@@ -43,7 +43,10 @@ namespace Controllers
             username = usernameInput.text;
             password = passwordInput.text;
             if (!ValidateInput())
+            {
                 ShowError();
+                return;
+            }
 
             errorMessageText.gameObject.SetActive(false);
 
@@ -105,6 +108,11 @@ namespace Controllers
             }
 
             return true;
+        }
+
+        private void OnDisable()
+        {
+            ClearPage();
         }
 
         private void ClearPage()

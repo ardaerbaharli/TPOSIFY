@@ -38,7 +38,10 @@ namespace Controllers
             password = passwordInput.text;
 
             if (!ValidateInput())
+            {
                 ShowError();
+                return;
+            }
 
             errorMessageText.gameObject.SetActive(false);
 
