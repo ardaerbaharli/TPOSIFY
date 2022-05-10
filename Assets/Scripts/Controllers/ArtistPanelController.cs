@@ -12,6 +12,15 @@ namespace Controllers
             PageController.Instance.GoBack();
         }
         
+        private void OnEnable()
+        {
+            PageController.Instance.ShowNavbar();
+        }
+
+        private void OnDisable()
+        {
+            PageController.Instance.HideNavbar();
+        }
         
     }
 }
